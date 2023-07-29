@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgb(4,9,30,0.7),rgba(4,9,30,0.7)), url(./images/banner.png) no-repeat center center/cover;
+    background-position: center;
+    background-size: cover;
+    
+}
+.nav{
+        display: flex;
+       padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+}
+nav img{
+    width: 200px;
+}
+img{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 30px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin: auto;
+    transition: .6s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text h1{
+    font-size: 60px;
+    color: white;
+}
+.text p{
+    margin: 10px 0px 40px;
+    font-size: 20px;
+    color: white;
+}
+.button{
+    display: inline block;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    border: 2px dotted skyblue;
+    background: rgb(236, 140, 45);
+    transition: 1s;
+
+}
+/*Section Course*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 30%;
+    background:rgb(237, 192, 223);
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    transition: .5s;
+}
+ h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgb(9, 32, 57);
+}
+.h3{
+    text-align: center;
+}
+/*campus your*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.col{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.campus-col{
+    flex-basis: 33%;
+    border-radius: 40px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+   
+}
+.campus-col img{
+    width: 100%;
+    height: 60%;
+    transition: .5s;
+    border-radius: 10px;
+}
+.campus-col img:hover{
+    box-shadow: 0px 0px 20px 0px rgb(40, 9, 42);
+}
+.campus-col h3{
+    opacity: 30%;
+}
+.campus-col h3:hover{
+    opacity: 100%;
+    color: rgb(188, 18, 114);
+}
+
+
+/*-----------facilities--------*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+.faci-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.faci-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.faci-col p{
+    padding: 0px;
+}
+.faci-col h3{
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.faci-col img{
+    transition: .7s;
+}
+.faci-col img:hover{
+    box-shadow: 0 0 20px 0 #9b3cd2;
+}
+
+
+/*----TESTIMONIAL----------*/
+
+.testimonial{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+.test-col{
+
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+
+}
+.test-col img{
+    float: left;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50% ;
+    align-items:left;
+}
+.test-col p{
+    padding: 0;
+}
+.test-col h3{
+    margin-top: 15px;
+    text-align: center;
+}
+.test-col .fa{
+    color: #f44336;
+}
+
+
+/******Call to action section************/
+
+.cta{
+    margin: 50px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(./images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon .fa{
+    color: #f44336;
+    margin: o 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color:#f44336;
+}
